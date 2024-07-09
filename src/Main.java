@@ -61,7 +61,44 @@ public class Main {
 
 
         // Task 6
-        System.out.println("Task 5: ");
+        System.out.println("Task 6: ");
+        int[] num1 = new int[5];
+        for (int p = 0; p < num1.length ; p++) {
+            num1[p] = p * 2;
+        }
 
+        for (int p = 0; p < num1.length; p++){
+            System.out.println("Element at index " + p + " is: " + num1[p]);
+        }
+        System.out.println(" ");
+
+
+        //Task 7
+        System.out.println("Task 7: ");
+        int[] num2 = new int [5];
+
+        for (int i = 1; i < num2.length ; i++) {
+            num2[i] = i * 2;
+
+            if (i == 2){
+                System.out.println("Index 2 is unavailable");
+                continue;
+
+            }
+            System.out.println("Index of : " + i + " is: " + num2[i]);
+        }
+        System.out.println(" ");
+
+
+        //Task 8
+        System.out.println("Task 8: ");
+        String[] names = {"Julio", "Toby", "Cookie", "Chole", "pab"};
+        System.out.println(Arrays.toString(names));
+
+        for (int i = 0; i < names.length; i++) {
+            names[0] = "cookie =" + " swapped from middle element";
+            names[2] = "Julio =" + " swapped from first element";
+        }
+        System.out.println(Arrays.toString(names));
     }
 }
