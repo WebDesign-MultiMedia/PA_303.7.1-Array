@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Objects;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -100,5 +102,55 @@ public class Main {
             names[2] = "Julio =" + " swapped from first element";
         }
         System.out.println(Arrays.toString(names));
+        System.out.println(" ");
+
+
+
+        //Task 9
+        System.out.println("Task 9: ");
+        int[] Num5 = {4, 2, 9, 13, 1 , 0};
+        System.out.println(Arrays.toString(Num5));
+
+        for (int i = 0; i < Num5.length ; i++) {
+            Arrays.sort(Num5);
+        }
+        System.out.println("Array in ascending order: " + Arrays.toString(Num5));
+        System.out.println("Smallest Number: " + Num5[0]);
+        System.out.println("Largest Number: " + Num5[5]);
+        System.out.println(" ");
+
+        //Task 10
+        System.out.println("Task 10: ");
+        Object[] mixedArr = new Object[5];
+
+        mixedArr[0] = 42;
+        mixedArr[1] = "HI";
+        mixedArr[2] = "Welcome";
+        mixedArr[3] = "Bye";
+        mixedArr[4] = 3.14;
+
+        System.out.println("Integer, 3 Strings, 1 double");
+            System.out.println(Arrays.toString(mixedArr));
+        System.out.println(" ");
+
+
+        //Task 11
+        System.out.println("Task 11: ");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("How many favorite things do you have? ");
+        int numOfFav = sc.nextInt();
+        sc.nextLine();
+
+        String[] favThings = new String[numOfFav];
+
+        for (int i = 0; i < numOfFav; i++) {
+            System.out.println("Enter them here: " + (i + 1) + ": ");
+            favThings[i] =sc.nextLine();
+
+        }
+        System.out.println("How many favorite things do you have ?");
+        System.out.println(favThings.length);
+
     }
 }
