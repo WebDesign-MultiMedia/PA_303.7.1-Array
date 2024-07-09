@@ -152,5 +152,8 @@ public class Main {
         System.out.println("How many favorite things do you have ?");
         System.out.println(favThings.length);
 
+        System.out.println("You favorite things are: ");
+        System.out.println(Arrays.toString(favThings));
+
     }
 }
